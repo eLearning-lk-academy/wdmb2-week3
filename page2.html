@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML form</title>
+  </head>
+  <body>
+    <h1>Page two</h1>
+    <a href="index.html">Home</a>
+    <br />
+    <a href="index.html#g-link">Google link</a>
+    <hr />
+    <!-- HTML form -->
+    <form>
+      <div class="input-element">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name" placeholder="Name" required />
+      </div>
+      <div class="input-element">
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="Email" />
+      </div>
+      <div class="input-element">
+        <label for="district">District</label>
+        <select id="district" name="district">
+          <option value="null">Select a district</option>
+          <option value="colombo" selected>Colombo</option>
+          <option value="gampaha">Gampaha</option>
+          <option value="kalutara">Kalutara</option>
+        </select>
+      </div>
+	  <div class="input-elements">
+		<label for="languages">Languages</label>
+		<select id="languages" name="languages" multiple size="2">
+			<option value="null">Select a language</option>
+			<option value="sinhala">Sinhala</option>
+			<option value="tamil">Tamil</option>
+			<option value="english">English</option>
+		</select>
+	  </div>
+	  <div class="input-element">
+		<label for="comment">Comment</label>
+		<textarea id="comment" name="comment" rows="5" cols="30" placeholder="Comment"></textarea>
+	  </div>
+      <div class="input-element">
+        <!-- <input type="submit" value="Submit" /> -->
+		<button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
